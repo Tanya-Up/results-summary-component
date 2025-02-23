@@ -1,0 +1,174 @@
+/** Variable Imports **/
+@import './variables.css';
+
+/**
+  CSS Reset
+  Source: https://www.joshwcomeau.com/css/custom-css-reset/
+**/
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+/* 5. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+/* 6. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+/* 7. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+/*
+  9. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+/** Your CSS Below **/
+
+/** Attribution CSS **/
+.attribution { font-size: 11px; text-align: center; padding-top: 10px }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/*----------------------------- MY CSS---------------------*/
+
+.wrapper{
+  background-color: var(--clr-stone100);
+  font-family: var(--fs-base);
+  padding: 120px 0;
+}
+
+.recipe_wrapper{
+  max-width: 740px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: var(--brd-radius);
+  color: var(--clr-stone600);
+}
+
+.recipe{
+  padding: 0 40px;
+}
+
+.recipe_image{
+  border-radius: var(--brd-radius);
+  padding-top: 40px;
+}
+
+.recipe_title{
+  font-family: var(--fs-accent);
+  padding-top: 20px;
+  color: var(--clr-stone900);
+  font-size: 36px;
+}
+
+.recipe_description,
+.recipe_preparation,
+.recipe_ingredients,
+.recipe_instructions,
+.recipe_nutrition{
+  padding: 25px 0;
+}
+
+.recipe_preparation{
+  padding: 20px;
+  background-color: var(--clr-rose50);
+  border-radius: var(--brd-radius);
+}
+
+.recipe_preparation__caption{
+  color: var(--clr-rose800);
+  padding-bottom: 10px;
+}
+
+.recipe_preparation__list{
+  padding-left: 20px;
+}
+.recipe_preparation__list li:not(:last-child),
+.recipe_ingredients__list li:not(:last-child),
+.recipe_instructions__list li:not(:last-child){
+  padding-bottom: 10px;
+}
+
+.recipe_preparation__list--bold,
+.recipe_instructions__list--bold{
+  font-weight: bold;
+}
+
+.recipe_ingredients__caption,
+.recipe_instructions__caption,
+.recipe_nutrition__caption{
+  color: var(--clr-brown800);
+  padding-bottom: 10px;
+  font-family: var(--fs-accent);
+}
+
+.recipe_instructions__list li::marker{
+  color: var(--clr-brown800);
+  font-weight: bold;
+}
+
+.recipe_nutrition__description{
+  padding-bottom: 10px;
+}
+
+.recipe_nutrition__list--item:not(:last-child){
+  border-bottom: 1px solid var(--clr-stone150);
+}
+
+.recipe_nutrition__list--item{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 20px;
+  padding: 10px 10px 10px 30px;
+
+}
+
+.recipe_nutrition__list--highlight{
+  font-weight: bold;
+  color: var(--clr-brown800);
+}
+
+ul, ol {
+  list-style-position: outside;
+}
+
+ul li, ol li {
+  padding-left: 20px;
+}
+
+.recipe_ingredients__list,
+.recipe_instructions__list{
+  padding: 0 25px;
+  text-align: justify;
+}
+
+.divider {
+  border-top: 1px solid var(--clr-stone150);
+  height: 0;
+}
+
+
+
