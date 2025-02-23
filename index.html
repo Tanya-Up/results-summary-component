@@ -7,114 +7,66 @@
 
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
 
-    <title>Frontend Mentor | Recipe page | Assignment 3</title>
+    <title>Frontend Mentor | Results summary component | Assignment 4</title>
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-<div class="wrapper">
-    <div class="recipe_wrapper">
-        <div class="recipe">
-            <div class="recipe_image">
-                <img src="assets/images/image-omelette.jpeg" alt="Omelette Recipe" class="main_img"/>
-            </div>
-            <div class="recipe_title">Simple Omelette Recipe</div>
-            <div class="recipe_description">
-                An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked
-                to perfection, optionally filled with your choice of cheese, vegetables, or meats.
-            </div>
-            <div class="recipe_preparation">
-                <h3 class="recipe_preparation__caption">Preparation time</h3>
-                <ul class="recipe_preparation__list">
-                    <li>
-                        <span class="recipe_preparation__list--bold">Total: </span> Approximately 10 minutes
-                    </li>
-                    <li>
-                        <span class="recipe_preparation__list--bold">Preparation: </span> 5 minutes
-                    </li>
-                    <li>
-                        <span class="recipe_preparation__list--bold">Cooking:  </span> 5 minutes
-                    </li>
-                </ul>
-            </div>
-            <div class="recipe_ingredients">
-                <h2 class="recipe_ingredients__caption">Ingredients</h2>
-                <ul class="recipe_ingredients__list">
-                    <li>2-3 large eggs</li>
-                    <li>Salt, to taste</li>
-                    <li>Pepper, to taste</li>
-                    <li>1 tablespoon of butter or oil</li>
-                    <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
-                </ul>
-            </div>
-            <div class="divider"></div>
-            <div class="recipe_instructions">
-                <h2 class="recipe_instructions__caption">Instructions</h2>
-                <ol class="recipe_instructions__list">
-                    <li>
-                        <span class="recipe_instructions__list--bold">Beat the eggs:</span>
-                        <span>In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed.
-                  You can add a tablespoon of water or milk for a fluffier texture.</span>
-                    </li>
-                    <li>
-                        <span class="recipe_instructions__list--bold"> Heat the pan:</span>
-                        <span>Place a non-stick frying pan over medium heat and add butter or oil.</span>
-                    </li>
-                    <li>
-                        <span class="recipe_instructions__list--bold">Cook the omelette:</span> Once the butter is
-                        melted
-                        and bubbling, pour in the eggs. Tilt the pan to ensure
-                        the eggs evenly coat the surface.
-                    </li>
-                    <li>
-                        <span class="recipe_instructions__list--bold">Add fillings (optional):</span> When the eggs
-                        begin to
-                        set at the edges but are still slightly runny in the
-                        middle, sprinkle your chosen fillings over one half of the omelette.
-                    </li>
-                    <li>
-                        <span class="recipe_instructions__list--bold">Fold and serve:</span> As the omelette continues
-                        to
-                        cook, carefully lift one edge and fold it over the
-                        fillings. Let it cook for another minute, then slide it onto a plate.
-                    </li>
-                    <li>
-                        <span class="recipe_instructions__list--bold">Enjoy:</span> Serve hot, with additional salt and
-                        pepper if needed.
-                    </li>
-                </ol>
-            </div>
-            <div class="divider"></div>
-            <div class="recipe_nutrition">
-                <h2 class="recipe_nutrition__caption">Nutrition</h2>
-                <div class="recipe_nutrition__description">
-                    The table below shows nutritional values per serving without the additional fillings.
+<div class="container">
+    <div class="component_wrapper">
+        <div class="component_result">
+            <p class="component_result__header">Your Result</p>
+            <div class="component_result_score">
+                <div class="component_result_score__wrapper">
+                    <span class="component_result_score__main">76</span>
+                    <span class="component_result_score__sub">of 100</span>
                 </div>
-                <div class="recipe_nutrition__list">
-                    <div class="recipe_nutrition__list--item">
-                        <div>Calories</div>
-                        <div class="recipe_nutrition__list--highlight">277kcal</div>
+            </div>
+            <p class="component_result__conc">Great</p>
+            <p class="component_result_description">You scored higher than 65% of the people who have taken these
+                tests.</p>
+        </div>
+        <div class="component_summary">
+            <p class="component_summary__header">Summary</p>
+            <div class="component_summary__wrapper">
+                <div class="component_summary_item reaction">
+                    <div class="component_summary_item__icon">
+                        <img src="assets/images/icon-reaction.svg" alt="reaction">
                     </div>
-                    <div class="recipe_nutrition__list--item">
-                        <div>Carbs</div>
-                        <div class="recipe_nutrition__list--highlight">0g</div>
+                    <p class="component_summary_item__name name_reaction">Reaction</p>
+                    <p class="component_summary_item__score">80 <span class="score_sub">/ 100</span></p>
+                </div>
+                <div class="component_summary_item memory">
+                    <div class="component_summary_item__icon">
+                        <img src="assets/images/icon-memory.svg" alt="memory">
                     </div>
-                    <div class="recipe_nutrition__list--item">
-                        <div>Protein</div>
-                        <div class="recipe_nutrition__list--highlight">20g</div>
+                    <p class="component_summary_item__name name_memory">Memory</p>
+                    <p class="component_summary_item__score">92 <span class="score_sub">/ 100</span></p>
+                </div>
+                <div class="component_summary_item verbal">
+                    <div class="component_summary_item__icon">
+                        <img src="assets/images/icon-verbal.svg" alt="verbal">
                     </div>
-                    <div class="recipe_nutrition__list--item">
-                        <div>Fat</div>
-                        <div class="recipe_nutrition__list--highlight">22g</div>
+                    <p class="component_summary_item__name name_verbal">Verbal</p>
+                    <p class="component_summary_item__score">61 <span class="score_sub">/ 100</span></p>
+                </div>
+                <div class="component_summary_item visual">
+                    <div class="component_summary_item__icon">
+                        <img src="assets/images/icon-visual.svg" alt="visual">
                     </div>
+                    <p class="component_summary_item__name name_visual">Visual</p>
+                    <p class="component_summary_item__score">73 <span class="score_sub">/ 100</span></p>
+                </div>
+                <div class="component_summary_button">
+                    <button>Continue</button>
                 </div>
             </div>
         </div>
     </div>
-    <div class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-        Coded by <a href="#">Tetiana Hil</a>
-    </div>
 </div>
-
+<div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Tetiana Hil</a>.
+</div>
 </body>
 </html>
